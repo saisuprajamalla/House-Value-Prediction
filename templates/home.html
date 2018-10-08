@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Value Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background: #43A047">
+<div class="login-page">
+    <div class="form">
+        <h1>House Value Prediction</h1>
+        <div style="color:red;"> {{ msg }} </div>
+        <form action="/" method="POST">
+            <fieldset>
+            {{ form.csrf_token }}
+            {{ form.pools(placeholder="pools") }}
+            {{ form.bathrooms(placeholder="bathrooms") }}
+            {{ form.bedrooms(placeholder="bedrooms") }}
+            {{ form.garages(placeholder="garages") }}
+                {{ form.lotsize(placeholder="lotsize") }}
+            {{ form.finishedsquarefeet(placeholder="finishedsquarefeet") }}
+            {{ form.submit(class_="form-submit") }}
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>

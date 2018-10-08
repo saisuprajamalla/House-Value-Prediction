@@ -1,0 +1,8 @@
+scipy==1.0.0
+Flask==0.12.2
+pandas==0.22.0
+numpy==1.14.0
+WTForms==2.1
+Flask_Script==2.0.6
+Flask_WTF==0.14.2
+scikit_learn==0.19.1
